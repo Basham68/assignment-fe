@@ -1,0 +1,132 @@
+:root {
+  --background: #e3dcdc;
+  --border: #eeeeee;
+  --text-primary: #0e0e0e;
+  --text-secondary: #a0a0a0;
+  --primary: #f0b354;
+  --primary-dark: #f0b35499;
+  --blue: #415894;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace sans-serif;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: xx-large;
+}
+.text-center {
+  text-align: center;
+}
+
+p,
+div,
+span {
+  color: var(--text-secondary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+#root,
+.flex,
+.stack {
+  display: flex;
+}
+
+#root {
+  flex: 1;
+  height: 100dvh;
+}
+
+.stack,
+#root {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: #fff;
+  gap: 1.5rem;
+}
+
+/* login */
+
+.login-header {
+  gap: 10px;
+}
+
+input {
+  outline: 1px solid var(--border);
+  border-radius: 4px;
+  border: none;
+  padding: 12px;
+}
+input:hover {
+  outline-color: var(--primary);
+}
+input:focus {
+  outline-width: 2px;
+  outline-color: var(--primary);
+}
+
+.gap-1 {
+  gap: 12px;
+}
+
+button {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 4px;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+button:hover {
+  background-color: var(--primary-dark);
+}
+button:active {
+  background-color: var(--primary);
+}
+
+a {
+  cursor: pointer;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.error {
+  color: crimson;
+  font-size: 14px;
+}
